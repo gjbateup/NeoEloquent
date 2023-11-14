@@ -1,5 +1,5 @@
 {
-    "name": "vinelab/neoeloquent",
+    "name": "gjbateup/neoeloquent",
     "description": "Laravel wrapper for the Neo4j graph database REST interface",
     "keywords": [
         "neo4j",
@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "illuminate/container": "~8.0",
+        "illuminate/container": "~.0",
         "illuminate/contracts": "~8.0",
         "illuminate/database": "~8.0",
         "illuminate/events": "~8.0",
@@ -39,19 +39,19 @@
     },
     "autoload": {
         "psr-4": {
-            "Vinelab\\NeoEloquent\\": "src/"
+            "gjbateup\\NeoEloquent\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Vinelab\\NeoEloquent\\Tests\\": "tests/"
+            "gjbateup\\NeoEloquent\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
     "extra": {
         "laravel": {
             "providers": [
-                "Vinelab\\NeoEloquent\\NeoEloquentServiceProvider"
+                "gjbateup\\NeoEloquent\\NeoEloquentServiceProvider"
             ]
         }
     }
