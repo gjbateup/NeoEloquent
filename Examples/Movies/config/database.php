@@ -1,8 +1,8 @@
 <?php
 
-use Vinelab\NeoEloquent\Connection;
+use gjbateup\NeoEloquent\Connection;
 use Illuminate\Database\Capsule\Manager as Capsule;
-use Vinelab\NeoEloquent\Schema\Grammars\CypherGrammar;
+use gjbateup\NeoEloquent\Schema\Grammars\CypherGrammar;
 
 $connection = [
     'driver' => 'neo4j',
@@ -12,7 +12,7 @@ $connection = [
     'password' => 'neo4j'
 ];
 
-Vinelab\NeoEloquent\Neo4j::connection($connection);
+gjbateup\NeoEloquent\Neo4j::connection($connection);
 
 $capsule = new Capsule;
 $manager = $capsule->getDatabaseManager();
